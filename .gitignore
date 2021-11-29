@@ -21,3 +21,5 @@
 .vs/
 Debug/
 Release/
+*.opensdf
+*.sdf

@@ -8,3 +8,5 @@ This will not work for Pinball FX3 or later. I'm assuming they switched to Direc
 The software allows switching from RETURN, for the plunger button, to SPACE.
 
 There seems to be intermittent dropping of controls if the device sits idle for 10-15 seconds or so. Maybe it's something to do with how I'm handling the initialization message. It sends a message to reset all of the controls.
+
+[CEnumerateSerial](http://www.naughter.com/enumser.html), from Naughter software, is used to enumerate the com ports.
