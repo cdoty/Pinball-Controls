@@ -39,7 +39,10 @@ Duo::Ptr Duo::create()
 {
 	INSTANCE(pDuo, Duo())
 
-	pDuo->initialize();
+	if (false == pDuo->initialize())
+	{
+		pDuo.reset();
+	}
 
 	return	pDuo;
 }
