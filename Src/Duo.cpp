@@ -407,9 +407,7 @@ bool Duo::findComPort()
 {
 	CEnumerateSerial::CPortAndNamesArray portAndNames;
 
-	HRESULT	hResult	= CEnumerateSerial::UsingSetupAPI1(portAndNames);
-
-	if (FAILED(hResult))
+	if (false == CEnumerateSerial::UsingSetupAPI1(portAndNames))
 	{
 		Log::instance()->logError("Unable to get a list of com ports");
 
